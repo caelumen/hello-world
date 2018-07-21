@@ -65,7 +65,7 @@ def checkperm(userid, cmd):
 
 
 @app.route('/html')
-def html():
+def html(): 
    str = '''
    <html>
    <head>
@@ -96,13 +96,14 @@ def html():
        $("#form_login").submit();
    })
    </script>
-   </html>
+   </html> 
    '''
    return str
 
 @app.errorhandler(400)
 def uncaughtError(error):
    return '잘못된 사용입니다. '
+
 
 
 
